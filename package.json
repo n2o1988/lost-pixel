@@ -31,7 +31,7 @@
     "version": "./update-versions.sh",
     "dev": "ts-node src/bin",
     "start": "NODE_ENV=production node dist/bin.js",
-    "postinstall": "rimraf dist && tsc"
+    "postinstall": "rimraf dist && ../.bin/tsc"
   },
   "engines": {
     "node": ">=18"
