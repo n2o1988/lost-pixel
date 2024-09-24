@@ -30,7 +30,8 @@
     "release": "np --no-publish",
     "version": "./update-versions.sh",
     "dev": "ts-node src/bin",
-    "start": "NODE_ENV=production node dist/bin.js"
+    "start": "NODE_ENV=production node dist/bin.js",
+    "postinstall": "rimraf dist && tsc"
   },
   "engines": {
     "node": ">=18"
