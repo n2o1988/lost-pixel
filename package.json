@@ -1,9 +1,11 @@
 {
-  "name": "lost-pixel",
+  "name": "lost-pixel-n2o",
   "version": "3.22.0",
   "description": "GitHub Action for Lost Pixel integration",
   "main": "dist/",
-  "bin": "dist/bin.js",
+  "bin": {
+    "lost-pixel": "dist/bin.js"
+  },
   "files": [
     "dist",
     "config-templates"
@@ -28,7 +30,6 @@
     "lint-fix": "xo --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky",
-    "postinstall": "npm run build",
     "release": "np --no-publish",
     "version": "./update-versions.sh",
     "dev": "ts-node src/bin",
@@ -50,15 +51,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lost-pixel/lost-pixel.git"
+    "url": "git+https://github.com/n2o1988/lost-pixel.git"
   },
   "keywords": [],
-  "author": "Chris Kalmar",
+  "author": "n2o1988",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lost-pixel/lost-pixel/issues"
+    "url": "https://github.com/n2o1988/lost-pixel/issues"
   },
-  "homepage": "https://github.com/lost-pixel/lost-pixel#readme",
+  "homepage": "https://github.com/n2o1988/lost-pixel#readme",
   "dependencies": {
     "@types/xml2js": "^0.4.14",
     "async": "3.2.6",
