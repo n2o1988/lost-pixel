@@ -1,6 +1,6 @@
 {
   "name": "lost-pixel-n2o",
-  "version": "3.22.0",
+  "version": "3.22.1",
   "description": "GitHub Action for Lost Pixel integration",
   "main": "dist/",
   "bin": {
